@@ -30,14 +30,15 @@
 
 | Libary | Description |
 | - | - |
-| [ComposeChangelog](https://github.com/MFlisar/ComposeChangelog/) | ... |
-| [ComposeColors](https://github.com/MFlisar/ComposeColors/) | ... |
-| [ComposeDebugDrawerg](https://github.com/MFlisar/ComposeDebugDrawerg/) | ... |
-| [ComposeDialogs](https://github.com/MFlisar/ComposeDialogs/) | ... |
-| [ComposePreferences](https://github.com/MFlisar/ComposePreferences/) | ... |
-| [ComposeThemer](https://github.com/MFlisar/ComposeThemer/) | ... |
+| [ComposeChangelog](https://github.com/MFlisar/ComposeChangelog/) | This library offers you a a **changelog dialog** for compose including the ability to show new logs on app start only as well as filtering and customisation. |
+| [ComposeColors](https://github.com/MFlisar/ComposeColors/) | A simple collection of colors that can be used inside any KMP Compose project. |
+| [ComposeDebugDrawerg](https://github.com/MFlisar/ComposeDebugDrawerg/) | This library offers you a **simple** and **easily extendable** debug drawer. |
+| [ComposeDialogs](https://github.com/MFlisar/ComposeDialogs/) | A compose framework for **modal dialogs**. |
+| [ComposePreferences](https://github.com/MFlisar/ComposePreferences/) | This library offers you **preference screens** for compose including the ability of endless nesting subscreens as well as simple integration of custom preferences. |
+| [ComposeThemer](https://github.com/MFlisar/ComposeThemer/) | This is a full **compose theme engine** that handles applying a theme as well as updating the system ui elements. Extendible and allows to simply apply user selected themes inside your app. |
 
 </details>
+
 
 
 
