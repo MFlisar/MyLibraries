@@ -22,7 +22,7 @@ jobs:
 
       # 1) update README.md by converting data/projects.yml to markdown table
       - name: Update README.md
-        run: bash scripts/update-readme.sh
+        run: bash scripts/update-readme.ps1
 
       # 2) Änderungen committen & pushen
       - name: Commit & push changes (if any)
