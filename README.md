@@ -12,9 +12,9 @@
 
 | Libary | Description |
 | - | - |
-| [KMPParcelize](https://github.com/MFlisar/KMPParcelize) | a multiplatform parcelize implementation that supports all platformslity to KMP projects. |
-| [KMPPlatformContext](https://github.com/MFlisar/KMPPlatformContext) | helps to use the android context without custum setup inside `commonMain` code and also provide platforms default `IO Context` |
-| [KMPMail](https://github.com/MFlisar/KMPMail) | provides a way to open the platforms email chooser and provide a subject, text and attachments |
+| [KMPParcelize](https://github.com/MFlisar/KMPParcelize) | A multiplatform parcelize implementation that supports all platforms. |
+| [KMPPlatformContext](https://github.com/MFlisar/KMPPlatformContext) | Helps to use the android context without custum setup inside `common` code and also provides a platform default `IO Context`. |
+| [KMPMail](https://github.com/MFlisar/KMPMail) | Provides a way to open the platforms email chooser (with support to prefill the subject and contact as well as attaching files). |
 
 </details>
 
