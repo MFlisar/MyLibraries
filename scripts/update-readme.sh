@@ -28,7 +28,6 @@ for ((g=0; g<group_count; g++)); do
   for ((i=0; i<items_count; i++)); do
     name=$(yq -r "${projects_path}[$g].items[$i].name" "$YML")
     desc=$(yq -r "${projects_path}[$g].items[$i].description" "$YML")
-    fi
     repo_url="https://github.com/MFlisar/$name"
     output+="| [$name]($repo_url) | $desc |\n"
   done
