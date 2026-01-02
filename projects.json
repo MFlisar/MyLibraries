@@ -44,23 +44,28 @@
           },
           {
             "name": "ComposeColors",
-            "description": "A simple collection of colors that can be used inside any KMP Compose project."
+            "description": "A simple collection of colors that can be used inside any KMP Compose project.",
+            "image": "https://raw.githubusercontent.com/MFlisar/ComposeColors/main/documentation/docs/screenshots/material/material.png"
           },
           {
             "name": "ComposeDebugDrawerg",
-            "description": "This library offers you a **simple** and **easily extendable** debug drawer."
+            "description": "This library offers you a **simple** and **easily extendable** debug drawer.",
+            "image": "https://raw.githubusercontent.com/MFlisar/ComposeDebugDrawer/main/documentation/docs/screenshots/core/demo2.jpg"
           },
           {
             "name": "ComposeDialogs",
-            "description": "A compose framework for **modal dialogs**."
+            "description": "A compose framework for **modal dialogs**.",
+            "image": "https://raw.githubusercontent.com/MFlisar/ComposeDialogs/main/documentation/docs/screenshots/color/demo_color1.jpg"
           },
           {
             "name": "ComposePreferences",
-            "description": "This library offers you **preference screens** for compose including the ability of endless nesting subscreens as well as simple integration of custom preferences."
+            "description": "This library offers you **preference screens** for compose including the ability of endless nesting subscreens as well as simple integration of custom preferences.",
+            "image": "https://raw.githubusercontent.com/MFlisar/ComposePreferences/main/documentation/docs/screenshots/overview.jpg"
           },
           {
             "name": "ComposeThemer",
-            "description": "This is a full **compose theme engine** that handles applying a theme as well as updating the system ui elements. Extendible and allows to simply apply user selected themes inside your app."
+            "description": "This is a full **compose theme engine** that handles applying a theme as well as updating the system ui elements. Extendible and allows to simply apply user selected themes inside your app.",
+            "image": "https://mflisar.github.io/ComposeThemer/screenshots/defaultpicker/android1.png"
           }
         ]
       }
