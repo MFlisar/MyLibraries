@@ -23,7 +23,7 @@ foreach ($groupObj in $projects) {
     $output += "| Image | Libary | Description |`n| - | - | - |`n"
     foreach ($item in $items) {
         $name = $item.name
-        $desc = $item.description + "`n" + "https://img.shields.io/maven-central/v/$($item.'main-maven-id')?label=&style=for-the-badge&labelColor=444444&color=grey"
+        $desc = $item.description + "`n" + "[maven version](https://img.shields.io/maven-central/v/$($item.'main-maven-id')?label=&style=for-the-badge&labelColor=444444&color=grey)"
         $image = $item.PSObject.Properties['image'] ? $item.image : $DEFAULT_IMAGE
         $repo_url = "https://github.com/MFlisar/$name"
         $output += "| <img src='$image' alt='Image' style='max-width:$MAX_IMAGE_WIDTH;'/> | [$name]($repo_url) | $desc |`n"
