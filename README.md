@@ -1,6 +1,6 @@
 ![KMP](https://kotlinlang.org/assets/images/open-graph/multiplatform.png)
 
-# Here's a list of my *kotlin multiplatform libraries*
+# Here's a list of my main *KMP libraries*
 
 <details>
 
@@ -32,5 +32,6 @@
 | - | - |
 
 </details>
+
 
 
