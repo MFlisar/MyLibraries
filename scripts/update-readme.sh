@@ -43,9 +43,6 @@ done
 
 echo -n "$output" > "$TEMP_MD"
 
-# Bereich im README ersetzen
-awk -v start="$START_MARKER" -v end="$END_MARKER" \
-  'BEGIN {inblock=0} \
-  {if ($0 ~ start) {print; while ((getline line < ARGV[2]) > 0) print line; close(ARGV[2]); inblock=1; next} else if ($0 ~ end) {inblock=0}} \
-  !inblock {print}' "$README" "$TEMP_MD" > "$README.tmp" && mv "$README.tmp" "$README"
-rm "$TEMP_MD"
+# Bereich im README ersetzen (sed: alles zwischen den Markern löschen, dann neuen Inhalt einfügen)
+sed -i.bak "/$START_MARKER/,/$END_MARKER/{ /$START_MARKER/{p; r $TEMP_MD\n        }; /$END_MARKER/p; d }" "$README"
+rm "$TEMP_MD" "$README.bak"
