@@ -23,8 +23,8 @@ for ((g=0; g<group_count; g++)); do
   else
     output+=$'\n<details>\n\n'
   fi
-  output+="<summary>$group ($items_count)</summary><br>\n\n"
-  output+="| Libary | Description |\n| - | - |\n"
+  output+=$"<summary>$group ($items_count)</summary><br>\n\n"
+  output+=$"| Libary | Description |\n| - | - |\n"
   for ((i=0; i<items_count; i++)); do
     name=$(yq -r "${projects_path}[$g].items[$i].name" "$YML")
     desc=$(yq -r "${projects_path}[$g].items[$i].description" "$YML")
