@@ -8,7 +8,7 @@ function Get-Image($item, $defaultImage) {
 }
 
 function Build-Table($items, $maxImageWidth, $defaultImage) {
-    $table = "<table>`n"
+    $table = "<table style='padding:10px;'>`n"
     $table += "  <tr><th>Image</th><th>Libary</th><th>Description</th></tr>`n"
     foreach ($item in $items) {
         $name = $item.name
@@ -17,9 +17,9 @@ function Build-Table($items, $maxImageWidth, $defaultImage) {
         $image = Get-Image $item $defaultImage
         $repo_url = "https://github.com/MFlisar/$name"
         $table += "  <tr>" +
-            "<td style='vertical-align: top;'><picture><img src='$image' alt='Image' style='max-width:$maxImageWidth;'/></picture></td>" +
-            "<td style='vertical-align: top;'><a href='$repo_url'>$name</a></td>" +
-            "<td style='vertical-align: top;'>$desc</td>" +
+            "<td valign='top'><picture><img src='$image' alt='Image' style='max-width:$maxImageWidth;'/></picture></td>" +
+            "<td valign='top'><a href='$repo_url'>$name</a></td>" +
+            "<td valign='top'>$desc</td>" +
             "</tr>`n"
     }
     $table += "</table>`n"
