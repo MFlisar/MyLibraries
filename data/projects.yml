@@ -30,15 +30,3 @@
           description: This library offers you **preference screens** for compose including the ability of endless nesting subscreens as well as simple integration of custom preferences.
         - name: ComposeThemer
           description: This is a full **compose theme engine** that handles applying a theme as well as updating the system ui elements. Extendible and allows to simply apply user selected themes inside your app.
-
-
-
-
-
-
-
-
-
-
-
-

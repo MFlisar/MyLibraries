@@ -8,6 +8,7 @@ README="README.md"
 START_MARKER="<!-- LIBRARIES START -->"
 END_MARKER="<!-- LIBRARIES END -->"
 TEMP_MD=".readme_libs.md"
+TEMP_README=".readme_new.md"
 
 # Hole die Projekte-Liste aus dem verschachtelten YAML
 projects_path=".[0].projects"
@@ -43,11 +44,24 @@ done
 
 echo -n "$output" > "$TEMP_MD"
 
-# Bereich im README ersetzen (sed: alles zwischen den Markern löschen, dann neuen Inhalt einfügen)
-# Keine Anführungszeichen um das sed-Muster, damit der Zeilenumbruch nach r $TEMP_MD korrekt erkannt wird
-sed -i.bak /"$START_MARKER"/,/"$END_MARKER"/{
-  /"$START_MARKER"/{p; r $TEMP_MD
+awk -v start="$START_MARKER" -v end="$END_MARKER" -v newblockfile="$TEMP_MD" '
+  BEGIN {inblock=0}
+  {
+    if ($0 ~ start) {
+      print
+      while ((getline line < newblockfile) > 0) print line
+      close(newblockfile)
+      inblock=1
+      next
+    }
+    if ($0 ~ end) {
+      inblock=0
+      print
+      next
+    }
+    if (!inblock) print
   }
-  /"$END_MARKER"/p; d
-} "$README"
-rm "$TEMP_MD" "$README.bak"
+' "$README" > "$TEMP_README"
+
+mv "$TEMP_README" "$README"
+rm "$TEMP_MD"
