@@ -9,21 +9,34 @@ $MAX_IMAGE_WIDTH = "200px"
 $jsonContent = Get-Content $JSON -Raw | ConvertFrom-Json
 $projects = $jsonContent[0].projects
 
-# Tabelle erstellen
-$output += "<table>`n"
-$output += "  <tr><th>Image</th><th>Libary</th><th>Description</th></tr>`n"
-foreach ($item in $items) {
-    $name = $item.name
-    $desc = $item.description + "<br>" + "![maven version](https://img.shields.io/maven-central/v/$($item.'main-maven-id')?label=&style=for-the-badge&labelColor=444444&color=grey)"
-    $image = $item.PSObject.Properties['image'] ? $item.image : $DEFAULT_IMAGE
-    $repo_url = "https://github.com/MFlisar/$name"
-    $output += "  <tr>" +
-        "<td valign='top'><img src='$image' alt='Image' style='max-width:$MAX_IMAGE_WIDTH;'/></td>" +
-        "<td valign='top'><a href='$repo_url'>$name</a></td>" +
-        "<td valign='top'>$desc</td>" +
-        "</tr>`n"
+$output = ""
+foreach ($groupObj in $projects) {
+    $group = $groupObj.group
+    $open_flag = $groupObj.open
+    $items = $groupObj.items
+    if ($open_flag -eq $true) {
+        $output += "`n<details open>`n`n"
+    } else {
+        $output += "`n<details>`n`n"
+    }
+    $output += "<summary>$group ($($items.Count))</summary><br>`n`n"
+    $output += "<table>`n"
+    $output += "  <tr><th>Image</th><th>Libary</th><th>Description</th></tr>`n"
+    foreach ($item in $items) {
+        $name = $item.name
+        $desc = $item.description + "<br>" + "<img src='https://img.shields.io/maven-central/v/$($item.'main-maven-id')?label=&style=for-the-badge&labelColor=444444&color=grey' alt='maven version'/>"
+        $image = if ($item.PSObject.Properties['image']) { $item.image } else { $DEFAULT_IMAGE }
+        $repo_url = "https://github.com/MFlisar/$name"
+        $output += "  <tr>" +
+            "<td valign='top'><img src='$image' alt='Image' style='max-width:$MAX_IMAGE_WIDTH;'/></td>" +
+            "<td valign='top'><a href='$repo_url'>$name</a></td>" +
+            "<td valign='top'>$desc</td>" +
+            "</tr>`n"
+    }
+    $output += "</table>`n"
+    $output += "`n</details>`n`n"
 }
-$output += "</table>`n"
+
 
 # Bereich im README ersetzen (ohne Tempfile)
 $readmeLines = Get-Content $README
