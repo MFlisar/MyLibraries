@@ -20,6 +20,10 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: List scripts folder
+        run: Get-ChildItem -Recurse
+        shell: pwsh
+
       # 1) update README.md by converting data/projects.yml to markdown table
       - name: Update README.md
         shell: pwsh
