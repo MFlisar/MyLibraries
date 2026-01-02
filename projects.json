@@ -39,7 +39,8 @@
         "items": [
           {
             "name": "ComposeChangelog",
-            "description": "This library offers you a a **changelog dialog** for compose including the ability to show new logs on app start only as well as filtering and customisation."
+            "description": "This library offers you a a **changelog dialog** for compose including the ability to show new logs on app start only as well as filtering and customisation.",
+            "image": "https://mflisar.github.io/ComposeChangelog/screenshots/core/changelog2.png"
           },
           {
             "name": "ComposeColors",
