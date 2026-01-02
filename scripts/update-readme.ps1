@@ -2,6 +2,7 @@ $JSON = "projects.json"
 $README = "README.md"
 $START_MARKER = "<!-- LIBRARIES START -->"
 $END_MARKER = "<!-- LIBRARIES END -->"
+$DEFAULT_IMAGE = "media/kotlin-icon.png"
 
 # Projekte-Liste aus JSON holen
 $jsonContent = Get-Content $JSON -Raw | ConvertFrom-Json
@@ -18,15 +19,17 @@ foreach ($groupObj in $projects) {
         $output += "`n<details>`n`n"
     }
     $output += "<summary>$group ($($items.Count))</summary><br>`n`n"
-    $output += "| Libary | Description |`n| - | - |`n"
+    $output += "| Image | Libary | Description |`n| - | - | - |`n"
     foreach ($item in $items) {
         $name = $item.name
         $desc = $item.description
+        $image = $item.PSObject.Properties['image'] ? $item.image : $DEFAULT_IMAGE
         $repo_url = "https://github.com/MFlisar/$name"
-        $output += "| [$name]($repo_url) | $desc |`n"
+        $output += "| ![Image]($image) | [$name]($repo_url) | $desc |`n"
     }
     $output += "`n</details>`n`n"
 }
+
 
 # Bereich im README ersetzen (ohne Tempfile)
 $readmeLines = Get-Content $README
