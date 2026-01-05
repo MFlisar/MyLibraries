@@ -1,5 +1,6 @@
 ---
 icon: lucide/blocks
+title: Small Utilities
 ---
 
 | Image | Library | Description |

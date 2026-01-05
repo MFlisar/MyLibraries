@@ -31,6 +31,7 @@ fun main() {
         val pageHeader = """
             ---
             icon: lucide/blocks
+            title: ${projectGroup.group}
             ---
 
         """.trimIndent()
