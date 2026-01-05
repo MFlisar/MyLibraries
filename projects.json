@@ -1,85 +1,80 @@
-[
-  {
-    "projects": [
-      {
-        "group": "Small Utilities",
-        "open": false,
-        "items": [
-          {
-            "name": "KMPParcelize",
-            "description": "A multiplatform parcelize implementation that supports all platforms.",
-            "main-maven-id": "io.github.mflisar.kmpparcelize/library"
-          },
-          {
-            "name": "KMPPlatformContext",
-            "description": "Helps to use the android context without custum setup inside `common` code and also provides a platform default `IO Context`.",
-            "main-maven-id": "io.github.mflisar.kmpplatformcontext/core"
-          },
-          {
-            "name": "KMPMail",
-            "description": "Provides a way to open the platforms email chooser (with support to prefill the subject and contact as well as attaching files).",
-            "main-maven-id": "io.github.mflisar.kmpmail/library"
-          }
-        ]
-      },
-      {
-        "group": "KMP Libraries",
-        "open": true,
-        "items": [
-          {
-            "name": "KotPreferences",
-            "description": "With this library you can declare **preferences via kotlin delegates** and observe and update them via kotlin flows. This works with any storage implementation, an implementation for JetPack DataStore is provided already.",
-            "main-maven-id": "io.github.mflisar.kotpreferences/core"
-          },
-          {
-            "name": "Lumberjack",
-            "description": "This is a full **logging library** with a build in way to log to console, file or any custom place as well as optional extensions to send a log file via mail or show it on the device.",
-            "main-maven-id": "io.github.mflisar.lumberjack/core"
-          }
-        ]
-      },
-      {
-        "group": "KMP Compose Libraries",
-        "open": true,
-        "items": [
-          {
-            "name": "ComposeChangelog",
-            "description": "This library offers you a a **changelog dialog** for compose including the ability to show new logs on app start only as well as filtering and customisation.",
-            "image": "https://mflisar.github.io/ComposeChangelog/screenshots/core/changelog2.png",
-            "main-maven-id": "io.github.mflisar.composechangelog/core"
-          },
-          {
-            "name": "ComposeColors",
-            "description": "A simple collection of colors that can be used inside any KMP Compose project.",
-            "image": "https://raw.githubusercontent.com/MFlisar/ComposeColors/main/documentation/docs/screenshots/material/material.png",
-            "main-maven-id": "io.github.mflisar.composecolors/core"
-          },
-          {
-            "name": "ComposeDebugDrawerg",
-            "description": "This library offers you a **simple** and **easily extendable** debug drawer.",
-            "image": "https://raw.githubusercontent.com/MFlisar/ComposeDebugDrawer/main/documentation/docs/screenshots/core/demo2.jpg",
-            "main-maven-id": "io.github.mflisar.composedebugdrawer/core"
-          },
-          {
-            "name": "ComposeDialogs",
-            "description": "A compose framework for **modal dialogs**.",
-            "image": "https://raw.githubusercontent.com/MFlisar/ComposeDialogs/main/documentation/docs/screenshots/color/demo_color1.jpg",
-            "main-maven-id": "io.github.mflisar.composedialogs/core"
-          },
-          {
-            "name": "ComposePreferences",
-            "description": "This library offers you **preference screens** for compose including the ability of endless nesting subscreens as well as simple integration of custom preferences.",
-            "image": "https://raw.githubusercontent.com/MFlisar/ComposePreferences/main/documentation/docs/screenshots/overview.jpg",
-            "main-maven-id": "io.github.mflisar.composepreferences/core"
-          },
-          {
-            "name": "ComposeThemer",
-            "description": "This is a full **compose theme engine** that handles applying a theme as well as updating the system ui elements. Extendible and allows to simply apply user selected themes inside your app.",
-            "image": "https://mflisar.github.io/ComposeThemer/screenshots/defaultpicker/android1.png",
-            "main-maven-id": "io.github.mflisar.composethemer/core"
-          }
-        ]
-      }
-    ]
-  }
-]
+{
+  "projects": [
+    {
+      "group": "Small Utilities",
+      "items": [
+        {
+          "name": "KMPParcelize",
+          "description": "A multiplatform parcelize implementation that supports all platforms.",
+          "main-maven-id": "io.github.mflisar.kmpparcelize/library"
+        },
+        {
+          "name": "KMPPlatformContext",
+          "description": "Helps to use the android context without custum setup inside `common` code and also provides a platform default `IO Context`.",
+          "main-maven-id": "io.github.mflisar.kmpplatformcontext/core"
+        },
+        {
+          "name": "KMPMail",
+          "description": "Provides a way to open the platforms email chooser (with support to prefill the subject and contact as well as attaching files).",
+          "main-maven-id": "io.github.mflisar.kmpmail/library"
+        }
+      ]
+    },
+    {
+      "group": "KMP Libraries",
+      "items": [
+        {
+          "name": "KotPreferences",
+          "description": "With this library you can declare **preferences via kotlin delegates** and observe and update them via kotlin flows. This works with any storage implementation, an implementation for JetPack DataStore is provided already.",
+          "main-maven-id": "io.github.mflisar.kotpreferences/core"
+        },
+        {
+          "name": "Lumberjack",
+          "description": "This is a full **logging library** with a build in way to log to console, file or any custom place as well as optional extensions to send a log file via mail or show it on the device.",
+          "main-maven-id": "io.github.mflisar.lumberjack/core"
+        }
+      ]
+    },
+    {
+      "group": "KMP Compose Libraries",
+      "items": [
+        {
+          "name": "ComposeChangelog",
+          "description": "This library offers you a a **changelog dialog** for compose including the ability to show new logs on app start only as well as filtering and customisation.",
+          "image": "https://mflisar.github.io/ComposeChangelog/screenshots/core/changelog2.png",
+          "main-maven-id": "io.github.mflisar.composechangelog/core"
+        },
+        {
+          "name": "ComposeColors",
+          "description": "A simple collection of colors that can be used inside any KMP Compose project.",
+          "image": "https://raw.githubusercontent.com/MFlisar/ComposeColors/main/documentation/docs/screenshots/material/material.png",
+          "main-maven-id": "io.github.mflisar.composecolors/core"
+        },
+        {
+          "name": "ComposeDebugDrawerg",
+          "description": "This library offers you a **simple** and **easily extendable** debug drawer.",
+          "image": "https://raw.githubusercontent.com/MFlisar/ComposeDebugDrawer/main/documentation/docs/screenshots/core/demo2.jpg",
+          "main-maven-id": "io.github.mflisar.composedebugdrawer/core"
+        },
+        {
+          "name": "ComposeDialogs",
+          "description": "A compose framework for **modal dialogs**.",
+          "image": "https://raw.githubusercontent.com/MFlisar/ComposeDialogs/main/documentation/docs/screenshots/color/demo_color1.jpg",
+          "main-maven-id": "io.github.mflisar.composedialogs/core"
+        },
+        {
+          "name": "ComposePreferences",
+          "description": "This library offers you **preference screens** for compose including the ability of endless nesting subscreens as well as simple integration of custom preferences.",
+          "image": "https://raw.githubusercontent.com/MFlisar/ComposePreferences/main/documentation/docs/screenshots/overview.jpg",
+          "main-maven-id": "io.github.mflisar.composepreferences/core"
+        },
+        {
+          "name": "ComposeThemer",
+          "description": "This is a full **compose theme engine** that handles applying a theme as well as updating the system ui elements. Extendible and allows to simply apply user selected themes inside your app.",
+          "image": "https://mflisar.github.io/ComposeThemer/screenshots/defaultpicker/android1.png",
+          "main-maven-id": "io.github.mflisar.composethemer/core"
+        }
+      ]
+    }
+  ]
+}

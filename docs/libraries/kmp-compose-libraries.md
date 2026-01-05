@@ -1,0 +1,12 @@
+---
+icon: lucide/blocks
+---
+
+| Image | Library | Description |
+| --- | --- | --- |
+| <img src='https://mflisar.github.io/ComposeChangelog/screenshots/core/changelog2.png' alt='Image' style='max-width:200px;'/> | <a href='https://github.com/MFlisar/ComposeChangelog'>ComposeChangelog</a> | This library offers you a a **changelog dialog** for compose including the ability to show new logs on app start only as well as filtering and customisation. |
+| <img src='https://raw.githubusercontent.com/MFlisar/ComposeColors/main/documentation/docs/screenshots/material/material.png' alt='Image' style='max-width:200px;'/> | <a href='https://github.com/MFlisar/ComposeColors'>ComposeColors</a> | A simple collection of colors that can be used inside any KMP Compose project. |
+| <img src='https://raw.githubusercontent.com/MFlisar/ComposeDebugDrawer/main/documentation/docs/screenshots/core/demo2.jpg' alt='Image' style='max-width:200px;'/> | <a href='https://github.com/MFlisar/ComposeDebugDrawerg'>ComposeDebugDrawerg</a> | This library offers you a **simple** and **easily extendable** debug drawer. |
+| <img src='https://raw.githubusercontent.com/MFlisar/ComposeDialogs/main/documentation/docs/screenshots/color/demo_color1.jpg' alt='Image' style='max-width:200px;'/> | <a href='https://github.com/MFlisar/ComposeDialogs'>ComposeDialogs</a> | A compose framework for **modal dialogs**. |
+| <img src='https://raw.githubusercontent.com/MFlisar/ComposePreferences/main/documentation/docs/screenshots/overview.jpg' alt='Image' style='max-width:200px;'/> | <a href='https://github.com/MFlisar/ComposePreferences'>ComposePreferences</a> | This library offers you **preference screens** for compose including the ability of endless nesting subscreens as well as simple integration of custom preferences. |
+| <img src='https://mflisar.github.io/ComposeThemer/screenshots/defaultpicker/android1.png' alt='Image' style='max-width:200px;'/> | <a href='https://github.com/MFlisar/ComposeThemer'>ComposeThemer</a> | This is a full **compose theme engine** that handles applying a theme as well as updating the system ui elements. Extendible and allows to simply apply user selected themes inside your app. |

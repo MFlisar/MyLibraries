@@ -1,0 +1,9 @@
+[versions]
+
+flexmark =                      "0.64.8"
+
+[libraries]
+
+flexmark =                          { module = "com.vladsch.flexmark:flexmark-all",                             version.ref = "flexmark" }
+
+
