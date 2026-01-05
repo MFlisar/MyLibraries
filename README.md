@@ -1,3 +1,10 @@
+Run locally:
+
+```bash
+// from the root folder
+docker run --rm -it -p 8000:8000 -v ${PWD}:/docs zensical/zensical
+```
+
 <picture>![KMP](media/kotlin-banner.png)</picture>
 
 [Image Source](https://kotlinlang.org/assets/images/open-graph/multiplatform.png)
