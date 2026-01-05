@@ -11,7 +11,7 @@ fun main() {
 
     val fileProjectsJson = File(root, "projects.json")
     val fileZensical = File(root, "zensical.toml")
-    val defaultImagePath = "../../media/kotlin-icon.png"
+    val defaultImagePath = "media/kotlin-icon.png"
     val maxImageWidth = "100px"
     val folderLibraries = File(root, "docs/libraries/")
 

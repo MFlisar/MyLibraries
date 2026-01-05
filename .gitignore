@@ -46,4 +46,5 @@ local.properties
 /.kotlin
 
 
-/site
+site/
+.idea/
