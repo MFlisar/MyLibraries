@@ -17,7 +17,7 @@ site_name = "Documentation"
 # meaningful description of the site content for use by search engines.
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_description
-site_description = "A new project generated from the default template project."
+site_description = "Documentation of my main open source libraries."
 
 # The site_author attribute. This is used in the HTML head element.
 #
@@ -29,12 +29,14 @@ site_author = "Michael Flisar"
 # Read more: https://zensical.org/docs/setup/basics/#site_url
 site_url = "https://mflisar.github.io/Libraries/"
 
+#repo_url = "https://github.com/MFlisar/Libraries"
+
 # The copyright notice appears in the page footer and can contain an HTML
 # fragment.
 #
 # Read more: https://zensical.org/docs/setup/basics/#copyright
 copyright = """
-Copyright &copy; 2025 The authors
+Copyright &copy; 2025 Michael Flisar
 """
 
 # Zensical supports both implicit navigation and explicitly defined navigation.
@@ -292,6 +294,6 @@ toggle.name = "Switch to light mode"
 # ----------------------------------------------------------------------------
 [[project.extra.social]]
 icon = "fontawesome/brands/github"
-link = "https://github.com/MFlisar/Libraries"
+link = "https://github.com/MFlisar"
 
 
