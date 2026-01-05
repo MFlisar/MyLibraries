@@ -26,6 +26,10 @@ data class ProjectItem(
     }
 
     fun markdownTableCellDescription() : String {
-        return description
+        //val desc = MarkdownUtil.convertMarkdownToHtml(description)
+        val image = "<img src='https://img.shields.io/maven-central/v/$mainMavenId?label=&style=for-the-badge&labelColor=444444&color=grey' alt='maven version'/>"
+        return description + "<br>" + image
+
+
     }
 }
