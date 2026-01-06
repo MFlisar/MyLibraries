@@ -13,7 +13,7 @@ permissions:
 jobs:
 
   update-docs:
-    name: Update README.md
+    name: Execute updateDocs
     runs-on: ubuntu-latest
 
     steps:
@@ -47,7 +47,7 @@ jobs:
           fi
 
   deploy:
-    name: Deploy Documentation to GitHub Pages
+    name: Deploy Github Page
     needs: update-docs
     environment:
       name: github-pages

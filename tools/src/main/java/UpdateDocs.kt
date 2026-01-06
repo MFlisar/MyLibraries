@@ -11,7 +11,7 @@ fun main() {
 
     val fileProjectsJson = File(root, "projects.json")
     val fileZensical = File(root, "zensical.toml")
-    val defaultImagePath = "../media/kotlin-icon.png"
+    val defaultImagePath = "../../media/kotlin-icon.png"
     val folderLibraries = File(root, "docs/libraries/")
 
     // 1) Lösche alle bestehenden Markdown-Dateien
