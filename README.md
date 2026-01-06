@@ -10,6 +10,6 @@ Links:
 * [Zensical](https://zensical.org/docs/get-started/)
 * [Supported Icons](https://zensical.org/docs/authoring/icons-emojis/?h=icons#included-icon-sets)
 
-Private repositories:
+Personal repositories:
 
 * [kmp-devtools](https://github.com/MFlisar/kmp-devtools)
